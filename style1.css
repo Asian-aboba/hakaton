@@ -1,0 +1,46 @@
+body{
+    width: 100%;
+    /* Встановлюємо фонове зображення для сторінки */
+    background-image: url('https://images.wallpaperscraft.ru/image/single/dom_skazka_art_101615_1920x1080.jpg');
+}
+
+img{
+    width: 400px;
+    height: 600px;
+    /* Встановлюємо позицію картинки (відносно сторінки) */
+    position: absolute;
+    top: 430px;
+    left: 1200px;
+}
+
+#dialogue-box {
+    /* Створюємо декілька радіальних градієнтів для фону діалогового вікна */
+    background-image: radial-gradient(circle at 70% 18%, hsla(126,0%,77%,0.05) 0%, hsla(126,0%,77%,0.05) 41%,transparent 41%, transparent 100%),
+                      radial-gradient(circle at 6% 94%, hsla(126,0%,77%,0.05) 0%, hsla(126,0%,77%,0.05) 52%,transparent 52%, transparent 100%),
+                      radial-gradient(circle at 93% 63%, hsla(126,0%,77%,0.05) 0%, hsla(126,0%,77%,0.05) 85%,transparent 85%, transparent 100%),
+                      radial-gradient(circle at 5% 85%, hsla(126,0%,77%,0.05) 0%, hsla(126,0%,77%,0.05) 8%,transparent 8%, transparent 100%),
+                      radial-gradient(circle at 49% 93%, hsla(126,0%,77%,0.05) 0%, hsla(126,0%,77%,0.05) 37%,transparent 37%, transparent 100%),
+                      linear-gradient(45deg, rgb(15, 5, 113),rgb(191, 90, 222));
+    /* Встановлюємо білий колір тексту */
+    color: white;
+    padding: 20px;
+    width: 500px;
+    /* Застосовуємо заокруглені кути для вікна діалогу */
+    border-radius: 10px;
+    /* Позиціонуємо діалогове вікно на сторінці */
+    position: absolute;
+    top: 680px;
+    left: 650px;
+}
+
+#answers button {
+    /* Стилі для кнопок (відповідей) в діалоговому вікні */
+    display: block;
+    margin: 10px 0;
+    background-color: #444; /* темний фон кнопки */
+    color: white; /* білий текст */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer; /* показує, що це клікабельний елемент */
+}

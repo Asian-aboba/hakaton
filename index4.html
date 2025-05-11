@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+  <!-- Затемнення -->
+  <div id="fade" class="fade"></div>
+
+   <!-- сцена 1 -->
+    <section id="scene5" class="scene active">
+      <div id="dialogue-box">
+        <p id="character-text">Чортове місце! Більше сюди не повернуся! Добре, що хоч живий залишився</p>
+        <div id="answers">
+          <button data-target="scene6">Піти до будинку відьми</button>
+        </div>
+
+      </div>
+    </section>
+       <!-- сцена 2 -->
+  <section id="scene6" class="scene">
+    <div id="dialogue-box">
+      <p id="character-text">Щось мені лячно йти до неї! </p>
+      <div id="answers">
+        <button data-target="scene7">Зайти всередину будинку</button>
+      </div>
+  </section>
+     <!-- сцена 3 -->
+  <section id="scene7" class="scene">
+    <div id="dialogue-box">
+        <img class="vedma" src="vedma.png">
+      <p id="character-text">Ну що карга стара я прийшов! Тримай свої артефакти, а я пішов...<p>
+      <div id="answers">
+        <button data-target="scene8">Втікти</button>
+      </div>
+  </section>
+     <!-- сцена 4 -->
+  <section id="scene8" class="scene">
+    <div id="dialogue-box">
+        <img class="vedma-piy" src="vedma.piy.pay.png">
+      <p id="character-text">СТІЙ!</p>
+      <div id="answers">
+        <button data-target="scene9">Кінець</button>
+      </div>
+  </section>
+     <!-- сцена 5 -->
+  <section id="scene9" class="scene">
+    <p id="character-text">Квест пройдено!<br>
+      Вас вбила відьма ворожка
+    </p>
+    <button><a href="main.html">Головне меню</a> </button>
+  </section>
+
+  </section>
+
+
+    <script src="anime4.js"></script>
+</body>
+</html>

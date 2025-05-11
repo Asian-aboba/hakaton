@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>level-1 fantasy hakaton</title>
+    <!-- Підключаємо зовнішній CSS файл -->
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <main>
+       <div class="vedma">
+        <div>
+            <!-- Вставляємо зображення відьми -->
+            <img  src="vedma.png">
+            <div id="dialogue-box">
+                <!-- Текст персонажа -->
+                <p id="character-text">ХТО ЦЕ ТУТ ІДЕ?? Що ти тут робиш? Хоча це не важливо,
+                   якщо ти тут то ти мені і допоможеш!</p>
+                <div id="answers">
+                  <!-- Кнопки з варіантами відповідей -->
+                  <button onclick="handleAnswer(1)">Я заблукав, а ти ще хто? Відьма?</button>
+                  <button onclick="handleAnswer(2)">Я заблукав, а ти ще хто? Відьма?
+                     Якщо це так то я тобі не буду допомагати!</button></button>
+                </div>
+              </div>
+        </div>
+       </div>
+       <!-- Підключаємо аудіофайл -->
+       <source src="David G. Bonacho - Abandoned Town _Original Short Film and Theatre Soundtracks_ - 189514 --- Jamendo - MP3.zip" type="audio/mpeg">
+    </main>
+    <!-- Підключаємо JavaScript файл -->
+    <script src="anime1.js"></script>
+</body>
+</html>

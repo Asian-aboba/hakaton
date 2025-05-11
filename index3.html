@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Фентезі Квест</title>
+  <link rel="stylesheet" href="style3.css" />
+</head>
+<body>
+  <!-- Затемнення -->
+  <div id="fade" class="fade"></div>
+
+    <section id="scene1" class="scene active">
+      <h2>
+        День 1<br>
+        Day 1
+      </h2>
+    </section>
+    <section id="scene2" class="scene">
+        <h2>
+            День 2<br>
+            Day 2
+          </h2>
+    </section>
+    <section id="scene3" class="scene">
+        <h2>
+            День 3<br>
+            Day 3
+          </h2>
+    </section>
+    <section id="scene4" class="scene">
+        <div class="dorogi">
+            <p>
+             Розвилка на 3 дороги? Відьма про таке не<br> розповідал! І куди тут  йти?
+            </p>
+            <button data-target="scene5">
+              Направо
+            </button>
+            <button data-target="scene5">
+              Наліво
+            </button> 
+            <button data-target="scene5">
+              Прямо
+            </button>
+          </div>
+    </section>
+    <section id="scene5" class="scene">
+      <div id="dialogue-box">
+        <p id="character-text">Щось мені не дуже подобається це місце...</p>
+        <div id="answers">
+          <button data-target="scene6">Зайти всередину</button>
+        </div>
+
+      </div>
+    </section>
+  <section id="scene6" class="scene">
+    <div id="dialogue-box">
+      <p id="character-text">О ні! ЩО ТУ РОБИТЬ СМЕРТЬ З КОСОЮ? Я НЕ ЗБИРАЮСЯ В ТАКОМУ ПРИЙМАТИ УЧАСТЬ</p>
+      <div id="answers">
+        <button data-target="scene7">Втікти</button>
+      </div>
+  </section>
+  <section id="scene7" class="scene">
+    <div id="dialogue-box">
+      <p id="character-text">Чорт! Двері зачинені...</p>
+      <div id="answers">
+        <button data-target="scene8">Втікти</button>
+      </div>
+  </section>
+  <section id="scene8" class="scene">
+    <div id="dialogue-box">
+      <p id="character-text">Ти від мене не втечеш! А якщо спробуєш то ти помреш! Щоб вийти звідси зіграймо в крестики-нулики, якщо переможеш забереш артефакти, а якщо програєш то я заберу твою душу!</p>
+      <div id="answers">
+        <button data-target="scene9">Грати в крестикик-нулики</button>
+      </div>
+  </section>
+  <section id="scene9" class="scene">
+    <h1>Хрестики-Нулики</h1>
+    <div class="board" id="board"></div>
+    <div class="message" id="message"></div>
+    <button data-target="scene10">Далі</button>
+  </section>
+  <section id="scene10" class="scene">
+    <div id="dialogue-box">
+      <p id="character-text">Ладно. Ти переміг бери свої артефакти і вали звідси поки живий</p>
+      <div id="answers">
+        <button ><a href="main.html">Головне меню</a></button>
+      </div>
+  </section>
+
+  <script src="anime3.js"></script>
+</body>
+</html>
